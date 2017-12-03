@@ -13,3 +13,10 @@ On application init the application will attempt to register itself to the eurek
 on ip address http://192.168.99.100:8761. If the eureka service is different you can change this
 IP address. After this address is changed please rebuild the application again and re run the docker-compose
 command from the root of the application
+
+Commads to Follow.
+
+cd srv/
+CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o srv .
+cd ../
+docker-compose up --build -d
