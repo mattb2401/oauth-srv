@@ -1,0 +1,11 @@
+version: '2'
+services:
+  api:
+      build:
+        context: ./srv
+        args:
+          app_env: ${APP_ENV}
+      volumes:
+        - ./api:/go/src/oauth-srv/srv
+      ports:
+        - "5000:8080"
