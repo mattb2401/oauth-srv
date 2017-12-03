@@ -16,7 +16,7 @@ command from the root of the application
 
 # Commands to Follow.
 
-cd srv/ \n
-CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o srv . \n
-cd ../ \n
-docker-compose up --build -d \n
+cd srv/
+CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o srv .
+cd ../
+docker-compose up --build -d

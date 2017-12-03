@@ -6,6 +6,6 @@ services:
         args:
           app_env: ${APP_ENV}
       volumes:
-        - ./api:/go/src/oauth-srv/srv
+        - ./api:/go/src/oauth-app/app
       ports:
         - "5000:8080"
